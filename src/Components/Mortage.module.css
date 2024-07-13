@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(202, 86%, 94%);
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+.mortagecont {
+    width: 850px;
+    height: 440px;
+    background: hsl(0, 0%, 100%);
+    /* padding: 1.3em 1.5em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+}
+
+.mortageleft, .mortageright {
+    height: 100%;
+}
+
+.mortagecont .mortageleft {
+    width: 50%;
+    background: hsl(0, 0%, 100%);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding: 1.1em 1.3em;
+}
+
+.mortageleft .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2em ;
+}
+
+.head h2 {
+    color: hsl(202, 55%, 16%);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.head a {
+    text-decoration: underline;
+    font-size: .8em;
+    font-weight: 400;
+    color: hsl(200, 26%, 54%);
+}
+
+.mortageleft .form {
+    margin-top: 1em;
+}
+
+.form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.form form .inputdetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2em;
+}
+
+.form form .inputdetails input {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: 1px solid hsl(200, 26%, 54%);
+    padding: .4em 1.3em .4em 3em;
+    font-size: .7em;
+    font-weight: 700;
+    color: hsl(202, 55%, 16%);
+    border-radius: .3em;
+}
+
+.form form .inputdetails label {
+    font-size: 1em;
+    font-weight: 600;
+    color: hsl(200, 26%, 54%);
+    margin-bottom: .4em;
+}
+
+.form form .details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 1.2em;
+}
+
+form .details .termrate {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form .details .termrate input {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    height: 35px;
+    outline: none;
+    border: 1px solid hsl(200, 26%, 54%);
+    padding: .4em 3em .4em 1.3em;
+    font-size: .7em;
+    font-weight: 700;
+    color: hsl(202, 55%, 16%);
+    border-radius: .3em;
+}
+
+form .details .termrate label {
+    font-size: 1em;
+    font-weight: 600;
+    color: hsl(200, 26%, 54%);
+    margin-bottom: .4em;
+}
+
+form .details .termrate span {
+    padding: .3em;
+    position: absolute;
+    top: .3em;
+    right: 0em;
+    background-color: hsl(202, 86%, 94%);
+    color: hsl(200, 26%, 54%);
+}
+
+.form form .radio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.3em;
+}
+
+.form form .radio .type {
+    width: 100%;
+    height: 35px;
+    display: flex;    
+    gap: 8px;
+    align-items: center;
+    border: 1px solid hsl(200, 26%, 54%);
+    padding: 1.2em 1em;
+    border-radius: .3em;
+    margin-bottom: .5em;
+}
+
+.form form .radio .type input {
+    accent-color: hsl(200, 26%, 54%);
+}
+
+.form form .radio .type label {
+    font-size: 1em;
+    font-weight: 700;
+    color: hsl(202, 55%, 16%);
+    display: grid;
+    place-content: center;
+}
+
+.form form .radio .mort {
+    font-size: 1em;
+    font-weight: 600;
+    color: hsl(200, 26%, 54%);
+    margin-bottom: .4em;
+}
+
+.form form .btn {
+    width: 70%;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+    background: hsl(61, 70%, 52%);
+    border-radius: 1.2em;
+    color: hsl(202, 55%, 16%);
+    font-size: .9em;
+    font-weight: 800;
+    padding: .7em 2em;
+    cursor: pointer;
+}
+
+.form form .btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.mortagecont .mortageright {
+    width: 50%;
+    background: hsl(202, 55%, 16%);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 4em;
+    padding: 1.1em 1.3em;
+    display: grid;
+    place-content: center;
+}
+
+.mortageright .righttop h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: .7em;
+}
+
+.mortageright .righttop p {
+    color:  hsl(202, 86%, 94%);
+    font-size: .8em;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+.mortageright .rightbottom {
+    width: 100%;
+    padding: 1.2em;
+    margin-top: 1.2em;
+    border-top: 3px solid hsl(61, 70%, 52%);
+    background: hsl(201, 48%, 11%);
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;   
+}
+
+.rightbottom .monthlyrepay {
+    border-bottom: 1px solid hsla(202, 86%, 94%, .3);
+}
+
+.rightbottom .monthlyrepay h3 {
+    color:  hsl(203, 41%, 72%);
+    font-size: .7em;
+    font-weight: 300;
+    margin-bottom: .7em;
+}
+
+.rightbottom .monthlyrepay p {
+    font-size: 1.7em;
+    font-weight: 800;
+    color: hsl(61, 70%, 52%);
+    margin-bottom: 1em;
+}
+
+.rightbottom .totalrepay {
+    margin-top: 1.3em;
+}
+
+.rightbottom .totalrepay h3 {
+    color:  hsl(203, 41%, 72%);
+    font-size: .7em;
+    font-weight: 300;
+    margin-bottom: .7em;
+}
+
+.rightbottom .totalrepay p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1em;
+    font-weight: 500;
+}
